@@ -5,7 +5,7 @@ from schema import StockFields
 import joblib, logging
 
 #load the LinearReression Model
-linmodel = joblib.load("ebay_stock_linmodel.pkl")
+linmodel = joblib.load("/Projects/Ebay_Stocks_Prediction/model/ebay_stock_linmodel.pkl")
 
 #Log API request information
 logging.basicConfig(filename="api.log", level=logging.INFO, format="%(asctime)s - %(message)s")
